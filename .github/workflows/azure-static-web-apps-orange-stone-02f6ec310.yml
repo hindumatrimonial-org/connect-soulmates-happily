@@ -40,7 +40,7 @@ jobs:
           action: "upload"
           app_location: "/"
           api_location: ""
-          output_location: ".output/public"
+          output_location: "dist/client"
           skip_app_build: true
           skip_api_build: true
 
