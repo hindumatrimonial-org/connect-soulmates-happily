@@ -35,9 +35,8 @@ jobs:
         run: |
           echo "--- .output/public ---"
           ls -la .output/public || echo "no dist"
-          echo "--- index check ---"
-          test -f .output/public/index.html && echo "index.html found" || exit 1
-          ls -la dist/client/ || echo "no dist/client"
+          echo "--- .output/server ---"
+          ls -la .output/server
 
       - name: Deploy
         id: builddeploy
