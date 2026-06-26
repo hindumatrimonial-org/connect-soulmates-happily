@@ -58,6 +58,27 @@ const getInitials = (name: string) =>
 
 const Index = () => (
   <div>
+    {/* Urgent Announcement Banner */}
+    <section className="bg-destructive text-destructive-foreground py-3 border-b-2 border-destructive-foreground/20">
+      <div className="container">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center">
+          <p className="text-sm md:text-base font-bold tracking-wide uppercase">
+            🚨 Seats Selling Out Fast — HM Europe 2026
+          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-sm md:text-base">
+            <span className="font-semibold">Men: 100% SOLD OUT</span>
+            <span className="hidden sm:inline opacity-60">|</span>
+            <span className="font-semibold">Women: Last Few Seats!</span>
+          </div>
+          <a
+            href="/registration"
+            className="inline-flex items-center gap-1 bg-background text-destructive font-bold px-4 py-1.5 rounded-full text-sm hover:bg-background/90 transition-colors whitespace-nowrap"
+          >
+            Book Now →
+          </a>
+        </div>
+      </div>
+    </section>
     {/* Hero */}
     <section className="relative overflow-hidden">
       <div
