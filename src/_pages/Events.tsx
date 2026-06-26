@@ -137,6 +137,22 @@ const Events = () => (
             </Button>
             <p className="text-xs text-muted-foreground mt-2">You'll be redirected to our secure registration form</p>
           </div>
+
+          <div className="mt-6 rounded-lg border border-primary/20 bg-accent/30 p-5 text-center">
+            <p className="font-semibold mb-1">Can't make this one?</p>
+            <p className="text-sm text-muted-foreground mb-3">
+              Get notified about future HMEurope events across Europe.
+            </p>
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <a
+                href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sign Up for Future Event Updates
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

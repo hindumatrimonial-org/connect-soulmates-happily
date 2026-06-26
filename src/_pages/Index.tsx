@@ -284,6 +284,31 @@ const Index = () => (
     </section>
 
 
+    {/* Future Events Signup */}
+    <section className="bg-accent/30 py-16">
+      <div className="container text-center max-w-2xl">
+        <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">
+          Stay In The Loop
+        </p>
+        <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+          Be First to Know About Future Events
+        </h2>
+        <p className="text-muted-foreground mb-8">
+          Missed out this time? Sign up to get notified about upcoming HMEurope matchmaking events
+          across Europe — so you never miss your chance to meet someone special.
+        </p>
+        <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <a
+            href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Notify Me About Future Events <ArrowRight className="ml-2 h-4 w-4" />
+          </a>
+        </Button>
+      </div>
+    </section>
+
     {/* CTA */}
     <section className="bg-secondary/10 py-16">
       <div className="container text-center">

@@ -20,6 +20,14 @@ const Footer = () => (
             <Link to="/faq" className="hover:text-secondary transition-colors">FAQ</Link>
             {/* <Link to="/sponsorship" className="hover:text-secondary transition-colors">Sponsorship</Link> */}
             <Link to="/about" className="hover:text-secondary transition-colors">About Us</Link>
+            <a
+              href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-secondary transition-colors"
+            >
+              Future Event Updates
+            </a>
           </div>
         </div>
         <div>
