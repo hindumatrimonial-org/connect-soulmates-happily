@@ -6,6 +6,7 @@ import { Users, Shield, Heart, Calendar, Star, MapPin, Quote, ArrowRight } from 
 import { activeEvent } from "@/config/activeEvent";
 import eventFlyer from "@/assets/hmeurope-flyer.jpg";
 import ShareButtons from "@/components/ShareButtons";
+import CountdownTimer from "@/components/CountdownTimer";
 import aboutHero from "@/assets/about-hero.png";
 import newImg01 from "@/assets/gallery/new-01.jpeg";
 import newImg02 from "@/assets/gallery/new-02.jpeg";
@@ -61,7 +62,7 @@ const Index = () => (
     {/* Urgent Announcement Banner */}
     <section className="bg-destructive text-destructive-foreground py-3 border-b-2 border-destructive-foreground/20">
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-6 text-center">
           <p className="text-sm md:text-base font-bold tracking-wide uppercase">
             🚨 Seats Selling Out Fast — HM Europe 2026
           </p>
@@ -70,6 +71,7 @@ const Index = () => (
             <span className="hidden sm:inline opacity-60">|</span>
             <span className="font-semibold">Women: Last Few Seats!</span>
           </div>
+          <CountdownTimer />
           <a
             href="/registration"
             className="inline-flex items-center gap-1 bg-background text-destructive font-bold px-4 py-1.5 rounded-full text-sm hover:bg-background/90 transition-colors whitespace-nowrap"
