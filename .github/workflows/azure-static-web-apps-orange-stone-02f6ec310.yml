@@ -37,8 +37,6 @@ jobs:
           ls -la .output/public || echo "no dist"
           echo "--- .output/server ---"
           ls -la .output/server
-          echo "--- .output/server/functions ---"
-          ls -la .output/server/functions
 
       - name: Deploy
         id: builddeploy
@@ -47,7 +45,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_STONE_02F6EC310 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          api_location: ".output/server/functions"
+          api_location: ".output/server"
           app_location: "/"
           output_location: ".output/public"
           skip_app_build: false
