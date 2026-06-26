@@ -125,6 +125,32 @@ const Index = () => (
       </div>
     </section>
 
+    {/* Future Events Signup — high visibility */}
+    <section className="bg-accent border-y-2 border-primary/20 py-8">
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-center md:text-left">
+        <div>
+          <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-1">
+            Stay In The Loop
+          </p>
+          <h2 className="text-xl md:text-2xl font-display font-bold">
+            Be First to Know About Future Events
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">
+            Get notified about upcoming HMEurope matchmaking events across Europe.
+          </p>
+        </div>
+        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap shrink-0">
+          <a
+            href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Notify Me <ArrowRight className="ml-2 h-4 w-4" />
+          </a>
+        </Button>
+      </div>
+    </section>
+
     {/* Featured Event Flyer */}
     <section className="bg-accent/30 py-16 md:py-20">
       <div className="container flex flex-col items-center text-center">
@@ -284,30 +310,7 @@ const Index = () => (
     </section>
 
 
-    {/* Future Events Signup */}
-    <section className="bg-accent/30 py-16">
-      <div className="container text-center max-w-2xl">
-        <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-3">
-          Stay In The Loop
-        </p>
-        <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-          Be First to Know About Future Events
-        </h2>
-        <p className="text-muted-foreground mb-8">
-          Missed out this time? Sign up to get notified about upcoming HMEurope matchmaking events
-          across Europe — so you never miss your chance to meet someone special.
-        </p>
-        <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-          <a
-            href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Notify Me About Future Events <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
-        </Button>
-      </div>
-    </section>
+
 
     {/* CTA */}
     <section className="bg-secondary/10 py-16">

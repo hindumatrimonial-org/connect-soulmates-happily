@@ -40,6 +40,14 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
+          <a
+            href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-1 px-3 py-2 rounded-md text-sm font-medium border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            Future Updates ↗
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -65,6 +73,15 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
+          <a
+            href="https://forms.zohopublic.eu/hmeurope/form/HMEuropeEventFutureEvents/formperma/xV0ZZi1CGItn3w-vWaNFLJ7eNXQxWK1Ho92iaih3CV0"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="block px-4 py-3 text-sm font-medium border-b border-border text-primary hover:bg-accent"
+          >
+            Future Updates ↗
+          </a>
         </div>
       )}
     </nav>
