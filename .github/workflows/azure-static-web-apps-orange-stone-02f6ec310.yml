@@ -31,6 +31,15 @@ jobs:
       - name: Build
         run: bun run build
 
+      - name: List build output
+        run: |
+          echo "--- dist/ ---"
+          ls -la dist/ || echo "no dist"
+          echo "--- dist/client/ ---"
+          ls -la dist/client/ || echo "no dist/client"
+
+
+
       - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
