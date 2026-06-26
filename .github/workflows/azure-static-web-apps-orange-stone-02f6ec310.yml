@@ -48,11 +48,11 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           api_location: ""
-          app_location: "dist/client"
-          output_location: ""
-          skip_app_build: true
+          app_location: "/"
+          output_location: "dist"
+          skip_app_build: false
           skip_api_build: true
-
+          
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
