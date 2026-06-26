@@ -33,12 +33,11 @@ jobs:
 
       - name: List build output
         run: |
-          echo "--- dist/ ---"
-          ls -la dist/ || echo "no dist"
-          echo "--- dist/client/ ---"
+          echo "--- .output/public ---"
+          ls -la .output/public || echo "no dist"
+          echo "--- index check ---"
+          test -f .output/public/index.html && echo "index.html found" || exit 1
           ls -la dist/client/ || echo "no dist/client"
-
-
 
       - name: Deploy
         id: builddeploy
@@ -50,7 +49,7 @@ jobs:
           api_location: ""
           app_location: "/"
           output_location: ".output/public"
-          skip_app_build: false
+          skip_app_build: true
           
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
