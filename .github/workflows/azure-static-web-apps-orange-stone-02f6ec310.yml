@@ -49,9 +49,8 @@ jobs:
           action: "upload"
           api_location: ""
           app_location: "/"
-          output_location: "dist"
+          output_location: ".output/public"
           skip_app_build: false
-          skip_api_build: true
           
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
